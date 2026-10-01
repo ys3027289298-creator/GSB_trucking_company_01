@@ -2,7 +2,7 @@ import json
 
 
 def new_game():
-    return {'audit': [('a', 1), ('b', 2)], 'used': 1, 'cap': 2, 'count': 0, 'accounts': {}, 'queue': [], 'src': 5, 'dst': 0, 'slots': 0}
+    return {'audit': [('a', 1), ('b', 2)], 'used': 1, 'cap': 2, 'count': 0, 'accounts': {}, 'queue': [], 'src': 5, 'dst': 0, 'slots': 0, 'snapshot': 5, 'value': 5, 'log': [], 'settled': False}
 
 def bug_16(state):
     return state["audit"]
@@ -34,6 +34,12 @@ def bug_12(state):
     return True
 
 def bug_19(state):
+    return True
+
+def bug_30(state):
+    return True
+
+def bug_31(state):
     return True
 
 def main():
